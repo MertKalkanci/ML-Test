@@ -624,6 +624,8 @@ Transform:
   - {fileID: 858789933}
   - {fileID: 377515077}
   - {fileID: 481519752}
+  - {fileID: 1017200936}
+  - {fileID: 892005127}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -639,8 +641,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -884,32 +885,37 @@ PrefabInstance:
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 24999.996
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 3999.9993
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_Name
       value: Car (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -1093,7 +1099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225658639}
   m_LocalRotation: {x: 0.08316278, y: 0.7075641, z: -0.0844597, w: 0.6966374}
-  m_LocalPosition: {x: 25.499998, y: 6.7, z: -74.2}
+  m_LocalPosition: {x: 19.5, y: 8.2, z: -74.1}
   m_LocalScale: {x: 147.11943, y: 11.150777, z: 2.264}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1163,6 +1169,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225658639}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &242311819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+    type: 3}
+  m_PrefabInstance: {fileID: 8372495078209367459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &242311827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242311819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Record: 1
+  NumStepsToRecord: 0
+  DemonstrationName: carRec
+  DemonstrationDirectory: car
 --- !u!1 &304938048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,8 +2010,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -2227,32 +2254,37 @@ PrefabInstance:
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 24999.996
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 3999.9993
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_Name
       value: Car (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -2887,8 +2919,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -3159,6 +3190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_RootOrder
@@ -3229,8 +3265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -3501,6 +3536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_RootOrder
@@ -3668,8 +3708,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -3913,32 +3952,37 @@ PrefabInstance:
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 24999.996
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 3999.9993
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_Name
       value: Car (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -4412,14 +4456,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858789932}
-  m_LocalRotation: {x: 0.015263142, y: 0.07908723, z: -0.0011955186, w: 0.99675024}
+  m_LocalRotation: {x: 0.014839831, y: 0.39469668, z: 0.0037646024, w: 0.91868395}
   m_LocalPosition: {x: -26.32, y: 4.18, z: -52.9}
-  m_LocalScale: {x: 24.653698, y: 8.563016, z: 32.559475}
+  m_LocalScale: {x: 3.0378287, y: 8.563016, z: 37.73969}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 161313607}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0.02, y: 49.639, z: 0.001}
+  m_LocalEulerAnglesHint: {x: 1.392, y: 46.513, z: 1.068}
 --- !u!65 &858789934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4495,8 +4539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -4767,6 +4810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_RootOrder
@@ -4922,6 +4970,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875112063}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &892005126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892005127}
+  - component: {fileID: 892005130}
+  - component: {fileID: 892005129}
+  - component: {fileID: 892005128}
+  m_Layer: 0
+  m_Name: Cube (9)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892005127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892005126}
+  m_LocalRotation: {x: 0.0027681221, y: 0.9927761, z: 0.008837037, w: -0.11962451}
+  m_LocalPosition: {x: -35.6, y: 4.9, z: -49.6}
+  m_LocalScale: {x: 2.5773559, y: 8.563016, z: 29.20154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161313607}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -1.043, y: 193.74, z: 0.194}
+--- !u!65 &892005128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892005126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &892005129
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892005126}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &892005130
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892005126}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1004077299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,6 +5163,103 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004077299}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1017200935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017200936}
+  - component: {fileID: 1017200939}
+  - component: {fileID: 1017200938}
+  - component: {fileID: 1017200937}
+  m_Layer: 0
+  m_Name: Cube (8)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017200936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017200935}
+  m_LocalRotation: {x: 0.0042559174, y: 0.99849707, z: 0.00822453, w: 0.054017574}
+  m_LocalPosition: {x: -36, y: 5.7, z: -99.9}
+  m_LocalScale: {x: 2.5773559, y: 8.563016, z: 29.20154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161313607}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -0.915, y: 173.802, z: 0.538}
+--- !u!65 &1017200937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017200935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1017200938
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017200935}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1017200939
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017200935}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1073142114
 GameObject:
@@ -5728,8 +5970,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -5973,32 +6214,37 @@ PrefabInstance:
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 24999.996
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 3999.9993
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_Name
       value: Car (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -6943,8 +7189,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -7214,6 +7459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Car (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -8255,8 +8505,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -8500,32 +8749,37 @@ PrefabInstance:
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495078311745849, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 24999.996
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.19620001
+      value: 0.1962
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079502277429, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 3999.9998
+      value: 3999.9993
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_Name
       value: Car (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
@@ -8812,8 +9066,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: MaxStep
@@ -9084,6 +9337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372495079520150020, guid: e8edfb4a4c0366e408024f746d3ce619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372495079520150024, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: m_RootOrder
@@ -9249,25 +9507,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2632526680137331843, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 7c8987b0d46c765408df23559063d83d,
-        type: 3}
-    - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
-        type: 3}
-      propertyPath: MaxStep
-      value: 10000
+      propertyPath: m_BehaviorType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: restart
       value: 
       objectReference: {fileID: 419792428}
-    - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
-        type: 3}
-      propertyPath: checkpoints.Array.size
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 7392609608272972526, guid: e8edfb4a4c0366e408024f746d3ce619,
         type: 3}
       propertyPath: checkpoints.Array.data[0]

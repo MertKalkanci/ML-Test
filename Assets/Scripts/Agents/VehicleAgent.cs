@@ -20,8 +20,8 @@ public class VehicleAgent : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<int> actions = actionsOut.DiscreteActions;
-        actions[0] = (int)Input.GetAxis("Horizontal");
-        actions[1] = (int)Input.GetAxis("Vertical");
+        actions[0] = (int)Input.GetAxis("Horizontal") == 1 ? 2 : 0;
+        actions[1] = (int)Input.GetAxis("Vertical") == 1 ? 2:0;
     }
     public override void OnActionReceived(ActionBuffers actions)
     {
@@ -30,8 +30,12 @@ public class VehicleAgent : Agent
     }
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(checkpoints[index].position);
+        sensor.AddObservation(transform.position.x);
+        sensor.AddObservation(transform.position.z);
+
+        sensor.AddObservation(checkpoints[index].position.x);
+        sensor.AddObservation(checkpoints[index].position.z);
+        sensor.AddObservation(transform.forward);
     }
     private void OnTriggerEnter(Collider other)
     {
