@@ -1,0 +1,10 @@
+python -m pip install --upgrade pip
+pip3 install torch torchvision torchaudio
+pip install mlagents
+pip install protobuf==3.19.6 --upgrade
+
+
+mlagents-learn --help To test install if lists commands its fine
+
+check Unity's documantation for newer installs
+https://github.com/Unity-Technologies/ml-agents
