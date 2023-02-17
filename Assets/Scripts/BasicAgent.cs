@@ -7,6 +7,8 @@ using Unity.MLAgents.Sensors;
 
 public class BasicAgent : Agent
 {
+    [SerializeField] Material win, lose;
+    [SerializeField] MeshRenderer ground;
     [SerializeField] Transform reward, parent;
     [SerializeField] float moveX, moveZ,rangeReward = 10f,speed = 0.2f;
     [SerializeField] Vector3 oldPosition;
@@ -16,11 +18,8 @@ public class BasicAgent : Agent
         moveZ = actions.ContinuousActions[1];
         transform.position += new Vector3(moveX, 0, moveZ) * speed;
 
-        float diffOld = Vector3.Distance(oldPosition, reward.position);
-        float diffNew = Vector3.Distance(transform.position, reward.position);
-        oldPosition = transform.position;
-
-        AddReward((diffNew - diffOld) * 0.1f);
+        float distanceToTarget = Vector3.Distance(this.transform.localPosition, reward.localPosition);
+        // Reached target
     }
     public override void CollectObservations(VectorSensor sensor)
     {
@@ -44,13 +43,15 @@ public class BasicAgent : Agent
     {
         if(other.CompareTag("Reward"))
         {
-            AddReward(1f);
+            SetReward(1f);
             EndEpisode();
+            ground.material = win;
         }
         else if (other.CompareTag("Wall"))
         {
-            AddReward(-1f);
+            SetReward(-1f);
             EndEpisode();
+            ground.material = lose;
         }
     }
 }

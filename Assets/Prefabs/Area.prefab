@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 6
-    NumStackedVectorObservations: 1
+    NumStackedVectorObservations: 6
     m_ActionSpec:
       m_NumContinuousActions: 2
       BranchSizes: 
@@ -585,7 +585,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: Simple
   TeamId: 0
   m_UseChildSensors: 1
@@ -606,7 +606,10 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100
+  MaxStep: 10000
+  win: {fileID: 2100000, guid: 055d8c891402637479a2e9a9479aca07, type: 2}
+  lose: {fileID: 2100000, guid: 84dc680597a1d9c45b9d63a8d06b9007, type: 2}
+  ground: {fileID: 1152181291558648956}
   reward: {fileID: 1152181291449217748}
   parent: {fileID: 1152181291064332796}
   moveX: 0
