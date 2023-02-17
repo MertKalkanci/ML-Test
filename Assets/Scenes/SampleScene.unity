@@ -364,10 +364,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 716876806, guid: 39bcfb3f4768e374bacf22ea83683ca3, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1152181291064332795, guid: 39bcfb3f4768e374bacf22ea83683ca3,
         type: 3}
       propertyPath: m_Name
@@ -427,11 +423,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152181292297963565, guid: 39bcfb3f4768e374bacf22ea83683ca3,
-        type: 3}
-      propertyPath: m_BehaviorType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
