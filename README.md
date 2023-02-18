@@ -20,7 +20,7 @@ Apply this commands on virtual environment for Unity ML 2.0
 
 `pip install protobuf==3.19.6 --upgrade` mlagents don't support new version of protobuff so we downgrade it
 
-Write `mlagents-learn --help` To test install if lists commands its fine
+Write `mlagents-learn --help` To test install, if lists commands its fine
 
 while training use  `mlagents-learn folderName/settingsFile.yaml(leava blank if you dont have) --run-id=RUNID`
 
