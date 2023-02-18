@@ -13,6 +13,7 @@ public class VehicleAgent : Agent
     [SerializeField] private WheelDrive carController;
     public override void OnEpisodeBegin()
     {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         index = 0;
         transform.position = restart.position;
         transform.rotation = restart.rotation;
@@ -21,7 +22,7 @@ public class VehicleAgent : Agent
     {
         ActionSegment<int> actions = actionsOut.DiscreteActions;
         actions[0] = (int)Input.GetAxis("Horizontal") == 1 ? 2 : 0;
-        actions[1] = (int)Input.GetAxis("Vertical") == 1 ? 2:0;
+        actions[1] = (int)Input.GetAxis("Vertical") == 1 ? 2 : 0;
     }
     public override void OnActionReceived(ActionBuffers actions)
     {
@@ -30,12 +31,8 @@ public class VehicleAgent : Agent
     }
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(transform.position.x);
-        sensor.AddObservation(transform.position.z);
-
-        sensor.AddObservation(checkpoints[index].position.x);
-        sensor.AddObservation(checkpoints[index].position.z);
-        sensor.AddObservation(transform.forward);
+        float directionDot = Vector3.Dot(transform.forward, checkpoints[index].position);
+        sensor.AddObservation(directionDot);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -52,6 +49,8 @@ public class VehicleAgent : Agent
                 Debug.Log("Reward :" + index);
                 AddReward(5f * index);
                 index++;
+                if (index >= checkpoints.Length)
+                    index = 0;
             }
         }
     }

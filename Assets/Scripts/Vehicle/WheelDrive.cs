@@ -58,8 +58,20 @@ public class WheelDrive : MonoBehaviour
 	{
 		m_Wheels[0].ConfigureVehicleSubsteps(criticalSpeed, stepsBelow, stepsAbove);
 
-		float vertical = (stateVertical == 2) ? 1 : ((stateVertical == 1) ? 0 : -1);
-		float horizontal = (stateHorizontal == 2) ? 1 : ((stateHorizontal == 1) ? 0 : -1);
+		float vertical = 0f,horizontal = 0f;
+
+		switch (stateVertical)
+        {
+			case 0: vertical = 1; break;
+			case 1: vertical = 0; break;
+			case 2: vertical = -1; break;
+        }
+		switch (stateHorizontal)
+		{
+			case 0: horizontal = 1; break;
+			case 1: horizontal = 0; break;
+			case 2: horizontal = -1; break;
+		}
 
 		float angle = maxAngle * horizontal;
 		float torque = maxTorque * vertical;
