@@ -2,8 +2,8 @@
 Some projects that I made to learn ML basics
 
 ## Videos:
-[Basic AI](https://www.youtube.com/watch?v=52315AwC7n8)
-[Car AI Fail](https://www.youtube.com/watch?v=GxIa7SrAKA8)
+- [Basic AI](https://www.youtube.com/watch?v=52315AwC7n8)
+- [Car AI Fail](https://www.youtube.com/watch?v=GxIa7SrAKA8)
 
 ## Setup:
 Using Unity 2022.1.8f1
