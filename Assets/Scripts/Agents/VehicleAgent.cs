@@ -39,7 +39,7 @@ public class VehicleAgent : Agent
         if(other.CompareTag("Wall"))
         {
             Debug.Log("Wall");
-            AddReward(-10f);
+            SetReward(-10f);
             EndEpisode();
         }    
         else if(other.CompareTag("Reward"))
@@ -47,7 +47,7 @@ public class VehicleAgent : Agent
             if(other.transform == checkpoints[index])
             {
                 Debug.Log("Reward :" + index);
-                AddReward(5f * index);
+                AddReward(5f * (index+1));
                 index++;
                 if (index >= checkpoints.Length)
                     index = 0;
